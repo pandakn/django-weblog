@@ -10,9 +10,10 @@
         <div class="card shadow" style="width: 18rem;">
             <img src="{{ post.feature_pic.url }}" class="card-img-top" alt="{{ post.title }}" style="">
             <div class="card-body">
-              <h5 class="card-title"><a href="{{ post.get_absolute_url }}" class="text-decoration-none text-dark">{{ post.title }}</a></h5>
-              <p class="card-text">{{ post.short_description }}</p>
-              <p class="text-muted" style="font-size: 14px;">Last updated: {{ post.date_created }}</p>
+              <h5 class="card-title">{{ post.title }}</h5>
+              <p class="card-text mb-2">{{ post.short_description }}</p>
+              <a href="{{ post.get_absolute_url }}" class="text-uppercase font-weight-bold" style="font-size: 14px;">Read More</a>
+              <p class="text-muted mt-2" style="font-size: 14px;">Last updated: {{ post.date_created }}</p>
             </div>
           </div><br>
         {% endfor %}

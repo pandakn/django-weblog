@@ -4,7 +4,7 @@
 <div class="container"><br>
   <h1 class="">Result</h1><br>
   {% for post in posts %}
-    <h4 class=""><a href="{{ post.get_absolute_url }}" class="text-dark text-decoration-none">{{ post.title }}</a></h4><br>
+      <h4 class=""><li><a href="{{ post.get_absolute_url }}" class="text-dark text-decoration-none">{{ post.title }}</a></li></h4><br>
   {% endfor %}
 </div>
 {% endblock %}
